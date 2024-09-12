@@ -9,3 +9,12 @@ WHERE (player_id, event_date) IN
      GROUP BY player_id)
     
 ;
+/*
+SELECT ROUND(COUNT(DISTINCT a2.player_id)/COUNT(DISTINCT a1.player_id),2) AS fraction FROM
+Activity a1
+LEFT JOIN ACtivity a2
+ON 
+a1.player_id = a2.player_id
+
+AND a1.event_date = a2.event_date + INTERVAL 1 DAY*/
+
