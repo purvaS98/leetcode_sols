@@ -2,7 +2,7 @@ class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         array_size = len(nums)
         
-        # Handle edge cases
+        # Handle edge cases for array size less than 3
         if array_size == 1:
             return 0
         
