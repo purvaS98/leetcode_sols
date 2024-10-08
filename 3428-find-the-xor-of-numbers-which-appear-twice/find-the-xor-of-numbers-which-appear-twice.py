@@ -11,7 +11,7 @@ class Solution:
             if result[res] == 2:
                 op = op ^ res
             
-        return op if op != 0 else 0
+        return op 
         
 
         
